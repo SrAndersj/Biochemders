@@ -1,21 +1,32 @@
-\documentclass[10pt,a4paper]{article}
+\documentclass[10pt,a4paper]{book}
+
 
 \usepackage{chemfig}
 
 \begin{document}
 	
 	
-	\chemfig{*6(--=---)}
+	\chemfig{*6(---=--)}
 	
-	\vspace{1cm}
 	
-	\chemfig{H-[1]O-[7]H}
 		
-	\vspace{1cm}
+	\chemfig{*6(=--=--)}
 	
-	\chemfig{C-[1]1}
-			
 	\vspace{1cm}
+		
+	\chemfig{*4(-=--)}
+	
+		\vspace{1cm}
+	
+	\chemfig{C-C}
+	
+	
+	\vspace{1cm}
+		
+	\chemfig{C-[1]1}
+	
+	
+		\vspace{1cm}
 	
 	\chemfig{C-[2]2}
 	
@@ -23,69 +34,47 @@
 	
 	\chemfig{C-[3]3}
 	
-		\vspace{1cm}
-	
-	\chemfig{C-[4]4}
-	
-		\vspace{1cm}
-	
 	\chemfig{A~B}
 	
-		\vspace{1cm}
-		
-		\chemfig{A>B}
-		
-			\vspace{1cm}
-		
-		\chemfig{A<B}
-			\vspace{1cm}
-			
-			
-		\chemfig{C-[1]C-[7]C(-[6]H)-[1]C}
-		
-		
-		\chemfig{*5(-=-O-(-(-[5]H)=[2]O)-)}
-		
-		
-		\vspace{1cm}
-		
-		\chemfig{
-			% 7
-			-[:210]% 3
-			=_[:270]% 2
-			-[:210]% 1
-			=_[:150]% 6
-			-[:90]% 5
-			=_[:30]% 4
-			(
-			-[:330]% -> 3
-			)
-		}
+	\chemfig{A<[3]B}
 	
 	
 	
-		\vspace{1cm}
-		
-		
+	
 	\chemfig{
-		F% 8
-		-[:150]% 7
+		% 7
+		-[:222]% 6
+		-[:162]% 2
+		-[:216]% 1
 		(
-		-[:90]F% 9
+		-[:270,,,1]OH% 8
 		)
+		-[:144]% 5
+		-[:72]% 4
+		-% 3
 		(
-		-[:30]F% 10
-		)
-		-[:210]% 3
-		=_[:270]% 2
-		-[:210]% 1
-		=_[:150]% 6
-		-[:90]% 5
-		=_[:30]% 4
-		(
-		-[:330]% -> 3
+		-[:288]% -> 2
 		)
 	}
-		
+	
+	
+	\vspace{1cm}
+	
+	\chemfig{
+		% 1
+		-[:30]% 2
+		(
+		-[:90]% 3
+		)
+		-[:330]% 4
+		(
+		-[:30]Cl% 6
+		)
+		(
+		-[:330]Cl% 7
+		)
+		-[:270]Cl% 5
+	}
+	
 	
 \end{document}
